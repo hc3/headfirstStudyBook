@@ -32,4 +32,4 @@ esse repo tem codigos para o estudo com o livro head first javascript programmin
 
 total de Páginas = 412 Pags.
 
-vou tentar traduzir o que eu entender é claro desse livro, lembrando que meu inglês é péssimo e isso pode até ajuda-lo a melhorar.
+vou tentar traduzir o que eu entender é claro, lembrando que meu inglês é péssimo e isso pode até ajuda-lo a melhorar.
