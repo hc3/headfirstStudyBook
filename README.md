@@ -1,4 +1,5 @@
-# headfirstStudyBook
+# Head First Javascript Programming.
+
 esse repo tem codigos para o estudo com o livro head first javascript programming.
 
 ##Resumo dos capitulos
@@ -23,4 +24,10 @@ esse repo tem codigos para o estudo com o livro head first javascript programmin
 
 10 - Funções, esse capitulo vai explorar de forma aprofundada as funções no Javascript - 32 Pags.
 
-11 -
+11 - Funções, esse capitulo ira abordar e forma mais contudente o assunto de funções com closures , anonymous functions entre outros - 30 Pags.
+
+12 - Objetos, esse capitulo ira abordar objetos - 29 Pags.
+
+13 - Objetos Prototypes, ira mais a fundo nos objetos vai tratar herança e parte de OO do JS - 48 Pags.
+
+total de Páginas = 412 Pags.
