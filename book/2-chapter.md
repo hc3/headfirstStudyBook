@@ -28,21 +28,21 @@ DECLARE uma variável para segurar o número de acerto chame-a de hit, e inciali
 DECLARE uma variável para segurar o número final de tentativas, chame-a de guesses e inicialize-a com 0.
 DECLARE uma variável para manter se o navio foi afundado ou não, chame-a de sunk e inicialize-a com false.
 
-<p>LOOP: enquanto o navio não for sunk</p>
-  <p>PEGUE a tentativa do usuário ( guess )</p>
-  <p>COMPARE se o valor do usuário é um input válido</p>
-  <p>SE o valor for invalido</p>
-    <p>RETORNE MENSAGEM para o usuário inserir um valor válido</p>
-  <p>SE NÂO</p> 
-    <p>ADICIONE valor a variável guesses ( tentativas )</p>
-    <p>SE usuário acertou a localização</p> 
-      <p>ADICIONE valor a variável hit</p>
-      <p>SE o valor de git for 3</p> 
-        <p>SETAR o valor true a variável sunk</p> 
-        <p>RETORNE MENSAGEM parabéns você venceu</p>
-      <p>FIM SE</p>
-    <p>FIM SE</p>
-  <p>FIM ELSE</p> 
-<p>FIM LOOP</p>
-<p>RETORNE MENSAGEM status do usuário.</p>
+LOOP: enquanto o navio não for sunk
+  PEGUE a tentativa do usuário ( guess )
+  COMPARE se o valor do usuário é um input válido
+  SE o valor for invalido
+    RETORNE MENSAGEM para o usuário inserir um valor válido
+  SE NÂO 
+    ADICIONE valor a variável guesses ( tentativas )
+    SE usuário acertou a localização 
+      ADICIONE valor a variável hit
+      SE o valor de git for 3 
+        SETAR o valor true a variável sunk 
+        RETORNE MENSAGEM parabéns você venceu
+      FIM SE
+    FIM SE
+  FIM ELSE 
+FIM LOOP
+RETORNE MENSAGEM status do usuário.
 ````
