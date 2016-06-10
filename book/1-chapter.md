@@ -44,4 +44,32 @@ palavra reservada **var** seguida do nome da variável sinal de igualdade e o va
 claro que pode ser opcional podemos declarar uma variável assim ```` var idade; ```` sem incializar, o nome das variáveis não pode inciar com números 
 ou ser alguma das palavras reservadas do javascript que é uma lista que você encontra fácil na [web](www.google.com.br).
 
-PAGINA 13 -
+### Loop e estruturas condicionais 
+
+o javascript tem também algumas formas de executar loops ou decisões.
+<h3>while</h3>
+````
+var idade = 1;
+while(idade < 18) {
+  alert("menor de idade");
+  idade = idade + 1; // ou idade++
+}
+````
+a estrutura while faz uma pergunta enquanto a idade for menor que 18 o bloco de código que está entre as chaves sera executado, podemos notar também que
+a variável que da condição para que o loop seja executado é incrementada a cada volta do loop isso é feito para não gerar um loop infinito dado que se a
+idade for sempre menor que 18 a função alert sera chamada infinitas vezes.
+
+<h3>if</h3>
+````
+if(idade < 18) {
+  alert("menor de idade");
+} else if(idade > 60) {
+  alert("idoso");
+}
+````
+a condicional if ou se, faz outra pergunta se idade é menor que 18 então execute o primeiro bloco se não se for maior que 60 execute o segundo bloco essa
+condicional diferente do loop while executa apenas uma vez não sendo necessário incrementar a variável idade.
+
+### Resumo
+
+Capitulo de introdução bem leve, fala sobre variáveis e como declarar e atribuir valores as mesmas, faz uma pequena introdução aos loops e condições.
