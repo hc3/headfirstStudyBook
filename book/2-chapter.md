@@ -22,11 +22,11 @@ se sim ele ganha um acerto são necessários três acertos para o fim do jogo.
 ## construindo o pseudocódigo.
 o pseudocódigo t
 ````
-<p>DECLARE três variáveis que serão a localização dos navios chame-as de loc1 , loc2 , loc3.</p>
-<p>DECLARE uma variável para segurar o número de tentativas corrente chame-a de guess.</p>
-<p>DECLARE uma variável para segurar o número de acerto chame-a de hit, e incialize-a com 0.</p>
-<p>DECLARE uma variável para segurar o número final de tentativas, chame-a de guesses e inicialize-a com 0.</p>
-<p>DECLARE uma variável para manter se o navio foi afundado ou não, chame-a de sunk e inicialize-a com false.</p>
+DECLARE três variáveis que serão a localização dos navios chame-as de loc1 , loc2 , loc3.
+DECLARE uma variável para segurar o número de tentativas corrente chame-a de guess.
+DECLARE uma variável para segurar o número de acerto chame-a de hit, e incialize-a com 0.
+DECLARE uma variável para segurar o número final de tentativas, chame-a de guesses e inicialize-a com 0.
+DECLARE uma variável para manter se o navio foi afundado ou não, chame-a de sunk e inicialize-a com false.
 
 <p>LOOP: enquanto o navio não for sunk</p>
   <p>PEGUE a tentativa do usuário ( guess )</p>
