@@ -46,3 +46,41 @@ LOOP: enquanto o navio não for sunk
 FIM LOOP
 RETORNE MENSAGEM status do usuário.
 ````
+    
+## construindo o código javascript
+
+````
+
+var loc1 = 3;
+var loc2 = 4;
+var loc3 = 5;
+
+var guess;
+var hits = 0;
+var guesses = 0;
+
+var isSunk = false;
+
+while(isSunk == false) { 
+  guess = prompt("Pronto para takar fire! ( entre com números de 0 a 6 ) );
+  if(guess < 0 || guess > 6) {
+    alert("por favor coloque um valor válido");
+  } else {
+    guesses++;
+  }
+  if(guess == loc1 || guess == loc2 || guess == loc3) {
+    alert("HIT!");
+    hits = hits + 1;
+    if(hits == 3){
+      isSunk = true;
+      alert("fim de jogo você venceu");
+    }
+  }else { 
+    alert("MISS");
+  }
+var stats = "You took " + guesses + " guesses to sink the battleship, " +
+"which means your shooting accuracy was " + (3/guesses);
+alert(stats);
+}
+````
+PAG 62
