@@ -6,8 +6,17 @@ com o passar tempo.
 ## vamos construir o jogo.
 
 - o jogo consiste em acertar os navios que estão dispostos na grid, mas é claro que não estão visiveis, a grid tem 7x7.
-
-1 - Usuário inicia o jogo</br>
+<ul>
+  <li>primeira</li>
+  <li>segunda</li>
+  <li>terceira</li>
+</ul>
+<ol>
+  <li>primeira</li>
+  <li>segunda</li>
+  <li>terceira</li>
+</ol>
+1 - Usuário inicia o jogo
   A - Jogo coloca os navios em lugares aleatorios.
 2 - Jogo começa, e repete essa ação até alguem vencer encontrar todos os navios
   A - usuário coloca as tentativas ( de 1 a 7 )
