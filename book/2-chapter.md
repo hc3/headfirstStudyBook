@@ -21,7 +21,7 @@ se sim ele ganha um acerto são necessários três acertos para o fim do jogo.
 
 ## construindo o pseudocódigo.
 o pseudocódigo t
-
+````
 <p>DECLARE três variáveis que serão a localização dos navios chame-as de loc1 , loc2 , loc3.</p>
 <p>DECLARE uma variável para segurar o número de tentativas corrente chame-a de guess.</p>
 <p>DECLARE uma variável para segurar o número de acerto chame-a de hit, e incialize-a com 0.</p>
@@ -45,3 +45,4 @@ o pseudocódigo t
   <p>FIM ELSE</p> 
 <p>FIM LOOP</p>
 <p>RETORNE MENSAGEM status do usuário.</p>
+````
