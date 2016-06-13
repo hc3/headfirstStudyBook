@@ -59,5 +59,40 @@ e retorna um console log, deu pra notar o quanto que o código ficou mais fácil
 
 # Oque podemos passar para uma função
 
+podemos passar boolean, strings, números e variáveis. 
 
+# parametros x argumentos
 
+quando definimos uma função podemos especifar os parametros e na chamada da função vamos colocar os argumentos
+
+DEFINIÇÃO DA FUNÇÃO
+````
+function cook(degrees, mode, duration) {
+// your code here
+}
+````
+CHAMADA DA FUNÇÃO
+````
+cook(425.0, "bake", 45);
+````
+
+# passagem por valor
+
+é muito importante entender a passagem de valores para uma função no javascript essa passagem é feita pass by value.
+se criarmos uma variável 
+````
+var age = 10;
+````
+e declararmos uma função que adiciona 1 ao valor passado
+````
+function addOne(x) {
+  x = x + 1;
+}
+````
+e agora passarmos a variável na chamada da função 
+````
+addOne(age);
+````
+vamos entender o que acontece aqui, o valor de age não sera alterado o que vai ser alterado é o valor x o valor de age é copiado para a variável x
+que está como parametro da função addOne
+93
