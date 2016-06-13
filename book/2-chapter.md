@@ -50,10 +50,10 @@ RETORNE MENSAGEM status do usuário.
 ## construindo o código javascript
 
 ````
-
-var loc1 = 3;
-var loc2 = 4;
-var loc3 = 5;
+var randomLoc = Math.floor(Math.random() * 5);
+var loc1 = randomLoc;
+var loc2 = loc1 + 1;
+var loc3 = loc2 + 2;
 
 var guess;
 var hits = 0;
@@ -83,4 +83,6 @@ var stats = "You took " + guesses + " guesses to sink the battleship, " +
 alert(stats);
 }
 ````
-PAG 62
+esse capitulo fez uma pequena introdução a estruturas de controle como while , if , existem outras como switch que não foram abordadas aqui, condições
+para essas estruturas podem ser encadeadas entre chaves usando || para OU e && para E, aqui vimos um básico sobre funções com a função random() que gera
+números aleatorios e funções como console.log() e alert() que exibem mensagens.
