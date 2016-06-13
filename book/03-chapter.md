@@ -48,5 +48,16 @@ function bark(name, weight) {
     console.log(name + " says woof woof");
   }
 }
+
+bark("rover", 23);
+bark("spot", 13);
+bark("spike", 53);
+bark("lady", 17);
 ````
-83
+isolamos o código que se repete em uma função a cada chamada da função alteramos os valores a função recebe como parâmetros o name e weight e faz uma comparação
+e retorna um console log, deu pra notar o quanto que o código ficou mais fácil de ler entender e usar, pois bem essa é a função ou functions.
+
+# Oque podemos passar para uma função
+
+
+
