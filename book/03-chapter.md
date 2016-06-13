@@ -57,11 +57,11 @@ bark("lady", 17);
 isolamos o código que se repete em uma função a cada chamada da função alteramos os valores a função recebe como parâmetros o name e weight e faz uma comparação
 e retorna um console log, deu pra notar o quanto que o código ficou mais fácil de ler entender e usar, pois bem essa é a função ou functions.
 
-# Oque podemos passar para uma função
+# Oque podemos passar para uma função.
 
 podemos passar boolean, strings, números e variáveis. 
 
-# parametros x argumentos
+# parametros x argumentos.
 
 quando definimos uma função podemos especifar os parametros e na chamada da função vamos colocar os argumentos
 
@@ -76,7 +76,7 @@ CHAMADA DA FUNÇÃO
 cook(425.0, "bake", 45);
 ````
 
-# passagem por valor
+# passagem por valor.
 
 é muito importante entender a passagem de valores para uma função no javascript essa passagem é feita pass by value.
 se criarmos uma variável 
@@ -94,5 +94,36 @@ e agora passarmos a variável na chamada da função
 addOne(age);
 ````
 vamos entender o que acontece aqui, o valor de age não sera alterado o que vai ser alterado é o valor x o valor de age é copiado para a variável x
-que está como parametro da função addOne
-93
+que está como parametro da função addOne, na execução da função o valor de x é alterado e o valor de age se mantem.
+
+# um pouco mais sobre argumentos de função.
+
+se passarmos menos argumentos do que a função tem como parametro os argumentos que não foram passados se tornam undefined:
+````
+function makeTea(cups, tea) {
+console.log("Brewing " + cups + " cups of " + tea);
+}
+makeTea(3);
+//console : Brewing 3 cups of undefined
+````
+
+se passarmos mais argumentos do que a função tem como parametro os argumentos a mais serão ignorados:
+````
+function makeTea(cups, tea) {
+console.log("Brewing " + cups + " cups of " + tea);
+}
+makeTea(3, "Earl Grey", "hey ma!", 42);
+//console : Brewing 3 cups of Earl Grey
+````
+
+se a função não tiver parametros, ah isso é normal : 
+````
+function barkAtTheMoon() {
+console.log("Woooooooooooooo!");
+}
+barkAtTheMoon();
+//console : Woooooooooooooo!
+````
+
+# funções podem retornar valores
+pag 95
