@@ -126,4 +126,24 @@ barkAtTheMoon();
 ````
 
 # funções podem retornar valores
-pag 95
+funcções podem retornar valores como por exemplo
+````
+function calculaIdade(idade) {
+  var message = "";
+  if(idade > 18) {
+    message = "idade é maior que 18";
+  } else {
+    message = "idade menor que 18";
+  }
+  return message;
+}
+
+calculaIdade(20);
+````
+e aqui chegamos a um ponto importante a variável ````message```` ela é local e só é acessível no escopo da função.
+##Global e Local variáveis
+
+se declaramos uma variável fora da função ela é global e pode ser acessada em qualquer parte do código, mas quando declaramos uma variável
+dentro de uma função ela é local sendo ela acessível apenas dentro da função que foi declarada.
+
+pag 101
