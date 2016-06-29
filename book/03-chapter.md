@@ -59,7 +59,7 @@ e retorna um console log, deu pra notar o quanto que o código ficou mais fácil
 
 # Oque podemos passar para uma função.
 
-podemos passar boolean, strings, números e variáveis. 
+podemos passar boolean, strings, números e variáveis.
 
 # parametros x argumentos.
 
@@ -79,7 +79,7 @@ cook(425.0, "bake", 45);
 # passagem por valor.
 
 é muito importante entender a passagem de valores para uma função no javascript essa passagem é feita pass by value.
-se criarmos uma variável 
+se criarmos uma variável
 ````
 var age = 10;
 ````
@@ -89,7 +89,7 @@ function addOne(x) {
   x = x + 1;
 }
 ````
-e agora passarmos a variável na chamada da função 
+e agora passarmos a variável na chamada da função
 ````
 addOne(age);
 ````
@@ -116,7 +116,7 @@ makeTea(3, "Earl Grey", "hey ma!", 42);
 //console : Brewing 3 cups of Earl Grey
 ````
 
-se a função não tiver parametros, ah isso é normal : 
+se a função não tiver parametros, ah isso é normal :
 ````
 function barkAtTheMoon() {
 console.log("Woooooooooooooo!");
@@ -145,5 +145,4 @@ e aqui chegamos a um ponto importante a variável ````message```` ela é local e
 
 se declaramos uma variável fora da função ela é global e pode ser acessada em qualquer parte do código, mas quando declaramos uma variável
 dentro de uma função ela é local sendo ela acessível apenas dentro da função que foi declarada.
-
-pag 101
+107
