@@ -145,4 +145,8 @@ e aqui chegamos a um ponto importante a variável ````message```` ela é local e
 
 se declaramos uma variável fora da função ela é global e pode ser acessada em qualquer parte do código, mas quando declaramos uma variável
 dentro de uma função ela é local sendo ela acessível apenas dentro da função que foi declarada.
-107
+
+## minhas observações.
+
+esse capitulo fez uma introdução a sintaxe javascript apresentou estruturas de controle e loops depois deu
+uma pequena dica sobre escopo de variáveis um assunto muito importante!.
