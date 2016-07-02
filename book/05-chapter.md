@@ -1,9 +1,9 @@
 ## Introdução a Objetos
 
-Por mas que digam que não o javascript é uma linguagem Orientada a Objetos e eu mesmo não sei porque de tanta zuada por conta disso, é claro que além de Orienta a Ojetos e javascript tem sua orientação a objetos baseadas em prototipos o que deixa algo meio confuso, pra quem veio do Java por exemplo pode ser meio complicado entender os Objetos em javascript são uma coleção de chave e valor e quando essa chave receve uma função como valor temos meio que uma emulação de um método e ai a coisa fica tensa mas esse capitulo vai abordar apenas uma introdução a objetos.
+Por mas que digam que o javascript não é uma linguagem Orientada a Objetos, e eu mesmo não sei porque de tanta zuada por conta disso, é claro que além de Orienta a Ojetos o javascript tem sua orientação a objetos baseadas em prototipos o que deixa algo meio confuso, pra alguém como eu veio do Java por exemplo, pode ser meio complicado entender os Objetos em javascript são uma coleção de chave e valor e quando essa chave receve uma função como valor temos meio que uma emulação de um método e ai a coisa fica tensa mas esse capitulo vai abordar apenas uma introdução a objetos.
 
 ## Iniciando
-- como podemos pensar sobre um objeto, por exemplo um carro é um objeto e um carro tem uma cor , um tamanho , um peso , tem algumas ações como ligar, podemos criar um objeto que representa um carro asim:
+- como podemos pensar sobre um objeto, por exemplo um carro é um objeto e um carro tem uma cor , um tamanho , um peso , tem algumas ações como ligar, podemos criar um objeto que representa um carro assim:
 ````
 var astra = {
   cor : "vermelho",
@@ -11,7 +11,7 @@ var astra = {
 };
 ````
 astra é um objeto a criação de objetos em javascript se da de forma dinâmica então não precisamos de uma classe para que um objeto seja criado a partir dela.
-para acessarmos o valor de uma variável podemos usar a seginte notação ````` astra.cor ````` e para remover uma propriedade podemos usar a palavra reservada delete.
+para acessarmos o valor de uma variável podemos usar a seginte notação  <code>astra.cor</code> e para remover uma propriedade podemos usar a palavra reservada <code>delete</code>.
 para entender melhor a variável astra é uma referencia para um objeto.
 
 ## Objetos e Funções
@@ -32,7 +32,7 @@ function escolheLivros(book) {
 
 escolheLivros(livro);
 ````
-o objeto livro foi passado para função escolheLivros() o que foi passado foi a refencia do objeto, isso significa que se dentro dessa função alguma propriedade do objeto fosse alterada ia repercutir no objeto original segue o exemplo.
+o objeto livro foi passado para função escolheLivros(), o que foi passado foi a refencia do objeto, isso significa que se dentro dessa função alguma propriedade do objeto fosse alterada iria repercutir no objeto original segue o exemplo.
 
 ````
 function alteraTema(book,newTema) {
@@ -124,4 +124,3 @@ var fiat = {
 
 o this pode ser entendido como uma palavra reservada que diz procure essa referencia aqui mesmo, como no caso acima acaba que sendo explicito a variável <b>started</b> é uma propriedade do objeto fiat e o this está deixando isso explicito.
 
- 
