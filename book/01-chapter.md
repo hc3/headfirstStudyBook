@@ -23,7 +23,7 @@ p {
 </style>
 ````
 com o javascript podemos criar declarações que podem por exemplo fazer uma verificação 
-````
+````js
 var idade = 25;
 
 if(idade > 18) {
@@ -34,7 +34,7 @@ if(idade > 18) {
 ````
 algo interessante do javascript é que não é uma linguagem fortemente tipada onde precisamos declarar o tipo da variável, no javascript a variável ela tem
 a função de "guardar valores" como por exemplo
-````
+````js
 var idade = 10;
 var nome = "jose";
 var isValid = true;
@@ -48,7 +48,7 @@ ou ser alguma das palavras reservadas do javascript que é uma lista que você e
 
 o javascript tem também algumas formas de executar loops ou decisões.
 <h3>while</h3>
-````
+````js
 var idade = 1;
 while(idade < 18) {
   alert("menor de idade");
@@ -60,7 +60,7 @@ a variável que da condição para que o loop seja executado é incrementada a c
 idade for sempre menor que 18 a função alert sera chamada infinitas vezes.
 
 <h3>if</h3>
-````
+````js
 if(idade < 18) {
   alert("menor de idade");
 } else if(idade > 60) {

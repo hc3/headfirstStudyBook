@@ -6,7 +6,7 @@ será muito abordado nos próximos capitulos.
 
 vamos analisar esse código :
 
-````
+````js
 var dogName = "rover";
 var dogWeight = 23;
 if (dogWeight > 20) {
@@ -40,7 +40,7 @@ podemos ver no código acima o quanto ele se repete sem motivo, temos uma estrut
 o o latido do cachorro é alterado de minúsculo para maiúsculo, e porque tem que ser assim e se tivessemos que fazer isso para 1500 dogs? é ai que entra a função
 
 <b>aqui temos uma função</b>
-````
+````js
 function bark(name, weight) {
   if (weight > 20) {
     console.log(name + " says WOOF WOOF");
@@ -66,13 +66,13 @@ podemos passar boolean, strings, números e variáveis.
 quando definimos uma função podemos especifar os parametros e na chamada da função vamos colocar os argumentos
 
 DEFINIÇÃO DA FUNÇÃO
-````
+````js
 function cook(degrees, mode, duration) {
 // your code here
 }
 ````
 CHAMADA DA FUNÇÃO
-````
+````js
 cook(425.0, "bake", 45);
 ````
 
@@ -80,17 +80,17 @@ cook(425.0, "bake", 45);
 
 é muito importante entender a passagem de valores para uma função no javascript essa passagem é feita pass by value.
 se criarmos uma variável
-````
+````js
 var age = 10;
 ````
 e declararmos uma função que adiciona 1 ao valor passado
-````
+````js
 function addOne(x) {
   x = x + 1;
 }
 ````
 e agora passarmos a variável na chamada da função
-````
+````js
 addOne(age);
 ````
 vamos entender o que acontece aqui, o valor de age não sera alterado o que vai ser alterado é o valor x o valor de age é copiado para a variável x
@@ -99,7 +99,7 @@ que está como parametro da função addOne, na execução da função o valor d
 # um pouco mais sobre argumentos de função.
 
 se passarmos menos argumentos do que a função tem como parametro os argumentos que não foram passados se tornam undefined:
-````
+````js
 function makeTea(cups, tea) {
 console.log("Brewing " + cups + " cups of " + tea);
 }
@@ -108,7 +108,7 @@ makeTea(3);
 ````
 
 se passarmos mais argumentos do que a função tem como parametro os argumentos a mais serão ignorados:
-````
+````js
 function makeTea(cups, tea) {
 console.log("Brewing " + cups + " cups of " + tea);
 }
@@ -117,7 +117,7 @@ makeTea(3, "Earl Grey", "hey ma!", 42);
 ````
 
 se a função não tiver parametros, ah isso é normal :
-````
+````js
 function barkAtTheMoon() {
 console.log("Woooooooooooooo!");
 }
@@ -127,7 +127,7 @@ barkAtTheMoon();
 
 # funções podem retornar valores
 funcções podem retornar valores como por exemplo
-````
+````js
 function calculaIdade(idade) {
   var message = "";
   if(idade > 18) {

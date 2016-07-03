@@ -4,7 +4,7 @@ Por mas que digam que o javascript não é uma linguagem Orientada a Objetos, e 
 
 ## Iniciando
 - como podemos pensar sobre um objeto, por exemplo um carro é um objeto e um carro tem uma cor , um tamanho , um peso , tem algumas ações como ligar, podemos criar um objeto que representa um carro assim:
-````
+````js
 var astra = {
   cor : "vermelho",
   ano : 199
@@ -16,7 +16,7 @@ para entender melhor a variável astra é uma referencia para um objeto.
 
 ## Objetos e Funções
 - Objetos podem ser passados por parametros para funções
-````
+````js
 var livro = {
 	desc: "A ilha",
 	author: "desconhecido",
@@ -34,7 +34,7 @@ escolheLivros(livro);
 ````
 o objeto livro foi passado para função escolheLivros(), o que foi passado foi a refencia do objeto, isso significa que se dentro dessa função alguma propriedade do objeto fosse alterada iria repercutir no objeto original segue o exemplo.
 
-````
+````js
 function alteraTema(book,newTema) {
 	book.tema = newTema;
 }
@@ -45,7 +45,7 @@ alteraTema(livro,"Ação");
 ## OH BEHAVE! comportamentos... ações "métodos".
 - Sim é claro que Objetos tem ações e é claro que vamos aprender como implementar essas ações e as ações são feitas com funções como no exemplo
 
-````
+````js
 var fiat = {
 	make: "Fiat",
 	model: "500",
@@ -63,7 +63,7 @@ fiat.drive();
 ````
 podemos alterar o método drive.
 
-````
+````js
 var fiat = {
 	make: "Fiat",
 	model: "AT200",
@@ -92,7 +92,7 @@ var fiat = {
 
 essa abordagem não vai funcionar porque no monento em que o if procurar o valor em started ele irá fazer isso primeiramente em alguma variável local da função, como não existe ele vai procurar alguma variável global que também não existe porque o valor de started está no proprio objeto e para dizer isso a função devemos usar o operador <h4>this</h4>
 
-````
+````js
 var fiat = {
 	make: "Fiat",
 	model: "AT200",

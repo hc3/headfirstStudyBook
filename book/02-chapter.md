@@ -49,7 +49,7 @@ RETORNE MENSAGEM status do usuário.
     
 ## construindo o código javascript
 
-````
+````js
 var randomLoc = Math.floor(Math.random() * 5);
 var loc1 = randomLoc;
 var loc2 = loc1 + 1;
