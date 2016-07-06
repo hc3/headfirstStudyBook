@@ -1,7 +1,7 @@
 # Entendendo melhor os tipo de dados
 
--Tipos de dados em javascript, como já vimos nos capitulos anteriores o javascript possui tipo básicos como String, Numbers e Boolean e tem os Objetos
-em javascript tudo são objetos, existe também NaN , undefined , null. e nesse capitulo vamos desvendar esse tipos de dados.
+-Tipos de dados em javascript, como já vimos nos capitulos anteriores o javascript possui tipo básicos como String, Numbers e Boolean e tem os Objetos,
+em javascript tudo são objetos, existe também NaN , undefined , null. e nesse capitulo vamos desvendar esses tipos de dados.
 
 ## undefined
 
@@ -39,7 +39,7 @@ console.log(tipoCor)
 // string
 ````
 
-  criamos uma variável e atribuimos uma string a ela com o operador <b>typeof</b> conseguimos saber o tipo que no caso acima é uma string.
+  criamos uma variável e atribuimos uma string a ela, com o operador <b>typeof</b> conseguimos saber o tipo que no caso acima é uma string.
 
 ## null
 
@@ -51,8 +51,8 @@ objeto não existir a função retornará null.
 ## NaN
 
   Not a Number ( não é um número ) podemos pensar em quando divimos 0/0 temos um NaN ou se multiplicarmos uma string "jose" * 20 temos um NaN, quando
-o javascript não reconhece como um número existente ele retorna NaN ou seja NaN é usado para representar valores númericos que não podem ser representados
-NaN é diferente de NaN ````js NaN != NaN ```` ou seja não é com um teste condicional usando if que testamos se é NaN, porque NaN não é igual a nada.
+o javascript não reconhece como um número existente ele retorna NaN ou seja NaN é usado para representar valores númericos que não podem ser representados,
+NaN é diferente de NaN ```` NaN != NaN ```` ou seja não é com um teste condicional usando if que testamos se é NaN, porque NaN não é igual a nada.
 exemplo:
 
 ````js
@@ -80,7 +80,7 @@ console.log(typeof teste)
 
 ## Operadores de igualdade  "==" e "==="
 
-  como comprar valores no javascript? primeiro vamos ter o operador == que comprar se um valor é igual ao outro por exemplo:
+  como comparar valores no javascript? primeiro vamos ter o operador == que compara se um valor é igual ao outro por exemplo:
   
 ````js
 var n = 99;
@@ -99,7 +99,7 @@ if(n == 99) {
 ````
 
 veja que no exemplo acima mesmo usando uma string o javascript é esperto o suficiente para saber que a string "99" é igual o número 99, mas como?
-o javascript faz uma pergunta os valores são do mesmo tipo e são iguais? se sim retorna true e se os valores não forem do mesmo tipo mas forem iguais?
+o javascript faz uma pergunta os valores são do mesmo <b>tipo</b> e são <b>iguais</b>? se sim retorna true e se os valores não forem do mesmo tipo mas forem iguais?
 ai ele converte e retorna true então o "99" fica 99 mesmo sendo uma string ele consegue fazer isso por nós, vamos aos exemplos:
 
 comparar número e string
@@ -151,15 +151,15 @@ a string  vazia é convertida pra 0 e depois pode ser comprada com o número 1.
 // false
 ````
 
-o operador == pode gerar retornos inesperados, se não entermos bem seu funcionamento.
+o operador == pode gerar retornos inesperados se não entermos bem seu funcionamento.
 
   o segundo operador é o strict equality "===", isso mesmo três... com o operador "==" os valores são convertidos quando for preciso, com o operador "==="
-  não eles tem que ser estritamente iguais tem que ter o mesmo <b>tipo</b> e o mesmo <b>valor</b>.
+não, eles tem que ser estritamente iguais tem que ter o mesmo <b>tipo</b> e o mesmo <b>valor</b>.
   
 # contatenação 
 
   vamos falar um pouco sobre o operador + ( adição ) que é usado também para contatenar strings, e se tivermos um número e uma string usando o operador +
-como que faz? então com o operador + tem que comprar feito porque ele vai converter então vamos ver como:
+como que faz? então com o operador + tem que comprar feito porque ele vai converter, então vamos ver como:
 
 ````js
 var add = 3 + "4"  // aqui temos 34  haha
@@ -183,9 +183,9 @@ pois é doidera vamos dizer que se usarmos o operador + o número vai ter prefer
 
 # Objetos 
 
-   e como determinar se dois objetos são iguais? quando vimos os operadores "==" e "===" entendemos a diferença entre os dois para se comprar valores 
+   e como determinar se dois objetos são iguais? quando vimos os operadores "==" e "===" entendemos a diferença entre os dois para se comprar valores primitivos
 mas quando a questão são objetos não importa, vai dar na mesma quanto testamos se dois objetos são iguais estamos testando se eles tem a mesma referencia
-então se temos o obj1 e obj2 e as variáveis v1 para obj1 e b2 para obj2 v1 e v2 são diferentes pois são variáveis com referencia para dois objetos diferentes
+então se temos o obj1 e obj2 e as variáveis v1 para obj1 e v2 para obj2 v1 e v2 são diferentes pois são variáveis com referencia para dois objetos diferentes
 mais ai criamos a variável v3 e referenciamos o obj1 e agora comparamos v1 e v3 são iguais!
 
 # O que o javascript considera falso
