@@ -1,6 +1,6 @@
 # Head First Javascript Programming.
 
-esse repo tem codigos para o estudo com o livro head first javascript programming.
+esse repo tem códigos para o estudo com o livro head first javascript programming.
 
 ##Resumo dos capitulos
 
@@ -30,6 +30,6 @@ esse repo tem codigos para o estudo com o livro head first javascript programmin
 
 13 - Objetos Prototypes, ira mais a fundo nos objetos vai tratar herança e parte de OO do JS - 48 Pags.
 
-total de Páginas = 412 Pags.
+
 
 vou tentar traduzir o que eu entender é claro, lembrando que meu inglês é péssimo e isso pode até ajuda-lo a melhorar.

@@ -203,4 +203,41 @@ e para todos os outros o valor sera verdadeiro.
 
 # Strings
 
-294
+  em javascript existem os tipo primitivos e os objetos, os primitivos são básicos eles recebem um valor e pronto, já os objetos são mais complexos além
+de ter um valor eles podem também ter comportamentos, vamos um exemplo.
+
+````js
+var emot = "XOxxOO";
+var hugs = 0;
+var kisses = 0;
+emot = emot.trim();
+emot = emot.toUpperCase();
+for(var i = 0; i < emot.length ; i++) {
+  if (emot.charAt(i) === "X") {
+    hugs++;
+  } else if (emot.charAt(i) == "O") {
+    kisses++;
+  }
+}
+````
+mais o que é isso se a string é um valor primitivo o que são esses métodos? <b>trim()</b>,<b>toUpperCase()</b>,<b>chatAt</b>? isso porque o javascript
+suporta ambos a string tanto é um valor primitivo como um objeto, veja o exemplo:
+
+````js
+var name = "Jenny";
+var phone = "867-5309";
+var fact = "This is a prime number";
+var songName = phone + "/" + name;
+var index = phone.indexOf("-");
+if (fact.substring(10, 15) === "prime") {
+    alert(fact);
+}
+````
+criamos três variáveis do tipo string, nesse momento são três valores primitivos depois criamos a variável <b>songName</b> que vai contatenar as strings
+quando criamos a variável index, a variável phone que era um tipo primitivo é temporáriamente convertida para um objeto String e assim conseguimos acessar
+o método indexOf desse objeto na linha subsequente temos a variável fact que sofre o mesmo processo e acessa o método substring e no final temos um alert
+onde a variável fact voltou a ser um valor primitivo do tipo string.
+confuso? hehe eu também fiquei quando li pela primeira vez, mas veja bem não precisamos nos preocupar com nada disso ao criarmos uma string temos que ter
+em mente que temos um tipo com super poderes o javascript vai cuidar de todo o resto.
+
+não vou me aprofundar nos métodos da String pq isso aqui é apenas um resumo e pra quem quiser saber mais é só procurar na web.
