@@ -56,7 +56,7 @@ vimos anteriormente que funções são valores em javascript, podendo ser atribu
 * Passar por parâmetro para outras funções
 * Retornar funções de dentro de funções.
 
-<h5> Praticando first class functions! </h5>
+<h5> Passando funções por parâmetro </h5>
 vamos agora partir para uma abordagem mais prática do assunto, criaremos uma situação hipotética para um sistema de controle de viagens vamos criar a estrutura básica:
 ````js
 var passengers = [ { name: "Jane Doloop", paid: true },
@@ -140,3 +140,6 @@ if (!allPaid) {
   console.log("The plane can't take off: not everyone has paid.");
 }
 ````
+podemos ver como é simples a passagem de parâmetros usando funções com isso temos uma composição do código que pode ser reaproveitado em diversas partes, e se acontecer alguma mudança só precisamos alterar a função que estar sendo passada po parâmetro.
+
+<h5> Retornando funções de dentro de funções </h5>
