@@ -57,6 +57,7 @@ vimos anteriormente que funções são valores em javascript, podendo ser atribu
 * Retornar funções de dentro de funções.
 
 <h5> Passando funções por parâmetro </h5>
+
 vamos agora partir para uma abordagem mais prática do assunto, criaremos uma situação hipotética para um sistema de controle de viagens vamos criar a estrutura básica:
 ````js
 var passengers = [ { name: "Jane Doloop", paid: true },
@@ -143,3 +144,43 @@ if (!allPaid) {
 podemos ver como é simples a passagem de parâmetros usando funções com isso temos uma composição do código que pode ser reaproveitado em diversas partes, e se acontecer alguma mudança só precisamos alterar a função que estar sendo passada po parâmetro.
 
 <h5> Retornando funções de dentro de funções </h5>
+Vamos alterar um pouco os dados:
+````js
+var passengers = [ { name: "Jane Doloop", paid: true, ticket: "coach" },
+                  { name: "Dr. Evel", paid: true, ticket: "firstclass" },
+                  { name: "Sue Property", paid: false, ticket: "firstclass" },
+                  { name: "John Funcall", paid: true, ticket: "coach" } ];
+````
+temos o tipo da cabite onde primeira classe tem bebidas de coquetéis e coach é a classe básica vamos criar uma função que vai verificar qual o tipo da passagem do cliente e assim servir a bebida adequada ao mesmo.
+
+````js
+function serveCustomer(passenger) {
+  if (passenger.ticket === "firstclass") {
+    alert("Would you like a cocktail or wine?");
+  } else {
+    alert("Your choice is cola or water.");
+  }
+  // fazer outras coisas...
+}
+````
+podemos ver como foi fácil usando um bloco if resolvemos o problema, mas ai fica a dúvida e se existissem outras classes? como "economica" , "super" e se os drinks mudarem? podemos ver que esse código pode gerar muita complicação dependendo da alteração que possa vir.
+vamos separar o código que varia em outra função:
+
+````js
+function createDrinkOrder(passenger) {
+  if (passenger.ticket === "firstclass") {
+    alert("Would you like a cocktail or wine?");
+  } else {
+    alert("Your choice is cola or water.");
+  }
+}
+````
+criamos outra função passando **passenger** e colocamos lá o código que varia na função **serverCustomer** vamos refatorar:
+
+````js
+function serverCustomer(passenger) {
+  createDrinkOrder(passenger);
+}
+````
+podemos ver que ficou muito melhor assim, mas e no dia-a-dia sera que esse código ia suprir nossas necessidades? acredito que não e se tivessemos 500 pasageiros para servir iamos fazer **createDrinkOrder** 500 vezes? hmm não parece muito legal , mas calma ai que podemos retornar funções de dentro de funções e isso vai resolver nosso problema.
+454
