@@ -3,7 +3,7 @@
 First Class Functions
 - as funções em javascript podem ser declaradas de duas formas:
 Function declaration :
-````
+````js
 function quack(num) {
   for (var i = 0; i < num; i++) {
     console.log("Quack!");
@@ -12,7 +12,7 @@ function quack(num) {
 quack(3);
 ````
 Function experession :
-````
+````js
 var fly = function(num) {
   for (var i = 0; i < num; i++) {
     console.log("Flying!");
@@ -26,7 +26,7 @@ Aqui podemos pensar que temos apenas mais do mesmo, já que no final são duas f
 
 quando criamos uma função seja com function declaration ou function expression estamos declarando uma variável que irá ser a referência para acessarmos essa função, então podemos atribuir funções a variáveis.
 
-````
+````js
 function quack(num) {
   for (var i = 0; i < num; i++) {
   console.log("Quack!");
