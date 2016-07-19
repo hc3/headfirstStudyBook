@@ -253,3 +253,4 @@ servePassengers(passengers);
 ````
 
 finalizamos essa primeira parte que irá se aprofundar um pouco em funções aqui vimos o que são funções em javascript que são valores e que podem ser passados para variáveis, que podem serem passados por parâmetro para outras funções, e que podem ser retornadas por outras funções ( uma função que retorna outra função ), a partir da aqu já podemos pensar o quanto de reuso que pode e deve ser feitos com essa habilidade do javascript devemos sempre lembrar que as funções são de **primeira ordem**
+475
