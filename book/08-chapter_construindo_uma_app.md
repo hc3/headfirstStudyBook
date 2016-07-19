@@ -144,4 +144,74 @@ podemos ver aqui que criamos 7 <tr> com 7 <td> cada.
   </form>
 </div>
 ````
-omitindo o conteúdo da table, temos a inclusão de uma div para área de mensagens e um form que vai pegar entrada do usuário e o botão que vai enviar essa entrada.
+omitindo o conteúdo da table, temos a inclusão de uma div para área de mensagens e um form que vai pegar entrada do usuário e o botão que vai enviar essa entrada.<br/>
+-Vamos adicionar um pouco de estilo na mensagem e no input, as células por sua vez vão precisar de um tamanho vamos começar com a messageArea:
+
+````css
+body {
+	background-color: black;
+}
+
+div#board {
+	position : relative;
+	width: 1024px;
+	height: 863px;
+	margin: auto;
+	background: url("board.jpg") no-repeat;
+}
+div#messageArea {
+	position:absolute;
+	top:0px;
+	left:0px;
+	color: rgb(83, 175, 19);
+}
+````
+veja que foi adicionado o estilo a <div id="messageArea"> position absolute se refere ao fato de que ela está dentro da <div id="board"> com isso ela fica no canto esquerdo com top e left com 0px.<br/>
+
+e depois é adicionado o css completo com todos os elementos:
+
+````css
+body {
+	background-color: black;
+}
+
+div#board {
+	position : relative;
+	width: 1024px;
+	height: 863px;
+	margin: auto;
+	background: url("board.jpg") no-repeat;
+}
+div#messageArea {
+	position:absolute;
+	top:0px;
+	left:0px;
+	color: rgb(83, 175, 19);
+}
+table {
+	position: absolute;
+	left: 173px;
+	top: 98px;
+	border-spacing: 0px;
+}
+td {
+	width: 94px;
+	height: 94px;
+}
+form {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 15px;
+	background-color: rgb(83, 175, 19);
+}
+form input {
+	background-color: rgb(152, 207, 113);
+	border-color: rgb(83, 175, 19);
+	font-size: 1em;
+}
+````
+primeiro de tudo foi adicionado a <table> a position absolute e colocamos no lugar exato de onde fica os quadrados na imagem, depois adicionamos um determinado espaço para o <td> com widtg: 94px e heigth: 94px, um quadrado, que podemos ver perfeitamente acessando o console do navegador com F12 o próximo é o form e o input que são estilizados para ficar no canto inferior direto (<b>uma nota que gostaria de fazer ao terminar o css entrar no console e navegar pelo dom percebendo onde cada elemento ficou e como foi aplicado estilo ao mesmo</b>).
+<br/>
+
+-Quarto passo, posicionar os navios e as tentativas ou podemos chamar de misses que são as imagens que vão aparecer dependendo da jogada se o jogador acertou um <b>navio</b> se não um <b>misses</b>
