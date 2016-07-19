@@ -1,6 +1,10 @@
 ## Funções de Primeira Classe
 ### First Class Functions
 
+-Funções de primeira classe, quando funções são tratadas como valores que podem ser passados, retornados, manipulados.
+
+-Funções de ordem superior, quando funções são passadas por parâmetro ou retornada de outras funções.
+
 as funções em javascript podem ser declaradas de duas formas:
 
 Function declaration :
@@ -252,5 +256,11 @@ function servePassengers(passengers) {
 servePassengers(passengers);
 ````
 
-finalizamos essa primeira parte que irá se aprofundar um pouco em funções aqui vimos o que são funções em javascript que são valores e que podem ser passados para variáveis, que podem serem passados por parâmetro para outras funções, e que podem ser retornadas por outras funções ( uma função que retorna outra função ), a partir da aqu já podemos pensar o quanto de reuso que pode e deve ser feitos com essa habilidade do javascript devemos sempre lembrar que as funções são de **primeira ordem**
+finalizamos essa primeira parte que irá se aprofundar um pouco em funções aqui vimos o que são funções em javascript que são valores e que podem ser passados para variáveis, que podem serem passados por parâmetro para outras funções, e que podem ser retornadas por outras funções ( uma função que retorna outra função ), a partir da aqu já podemos pensar o quanto de reuso que pode e deve ser feitos com essa habilidade do javascript devemos sempre lembrar que as funções são de **primeira ordem**.
+
+Links referências:
+
+[Artigo da BrazilJS](https://braziljs.org/blog/funcoes-em-javascript/)
+
+
 475
