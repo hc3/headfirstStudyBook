@@ -58,9 +58,9 @@ Ao tentar executar esse código vamos ter um erro, isso porque a function expres
 
 <h3> Scope e Closures </h3>
 
+È perfeitamente normal definir funções dentro de outras funções, mas devemos usar declaration ou expression? quando definimos uma função dentro da outra estamos alterando o escopo ou seja onde a função é visível vamos ver o código abaixo para poder entender esse conceito.
 
 ````js
-
 var migrating = true;
 
 var fly = function(num) {
@@ -88,3 +88,38 @@ if (migrating) {
   fly(4);
 }
 ````
+a função interna tem o escopo local a função externa tem o escopo global, então **fly** e **quack** tem o escopo global, a função **wingFlapper** será definida quando entrarmos no corpo da função **fly** a função **quacker** só será definida na sua chamada dentro do loop.
+
+- Vamos entender melhor o escopo...
+
+````js
+var justAVar = "eu sou global!";
+
+function ondeEstou() {
+    var justAVar = "eu sou local!";
+
+    reutnr justAVar;
+}
+
+var resultado = ondeEstou();
+console.log(resultado);
+````
+foi criada uma variável global chamada **justAVar** depois foi criada uma função que cria uma nova variável chamda **justAVar** e retorna ao invocarmos essa função temos que a variável local foi passada e não global, vamos alterar esse código e retornar uma função agora:
+
+````js
+var justAVar = "eu sou global!";
+
+function ondeEstou() {
+    var justAVar = "eu sou local!";
+
+    function dentro() {
+      return justAVar;
+    }
+
+    return dentro();
+}
+
+var resultado = ondeEstou();
+console.log(resultado);
+````
+488
