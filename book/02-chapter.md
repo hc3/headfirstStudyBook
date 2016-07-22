@@ -33,20 +33,20 @@ LOOP: enquanto o navio não for sunk
   COMPARE se o valor do usuário é um input válido
   SE o valor for invalido
     RETORNE MENSAGEM para o usuário inserir um valor válido
-  SE NÂO 
+  SE NÂO
     ADICIONE valor a variável guesses ( tentativas )
-    SE usuário acertou a localização 
+    SE usuário acertou a localização
       ADICIONE valor a variável hit
-      SE o valor de git for 3 
-        SETAR o valor true a variável sunk 
+      SE o valor de git for 3
+        SETAR o valor true a variável sunk
         RETORNE MENSAGEM parabéns você venceu
       FIM SE
     FIM SE
-  FIM ELSE 
+  FIM ELSE
 FIM LOOP
 RETORNE MENSAGEM status do usuário.
 ````
-    
+
 ## construindo o código javascript
 
 ````js
@@ -61,8 +61,8 @@ var guesses = 0;
 
 var isSunk = false;
 
-while(isSunk == false) { 
-  guess = prompt("Pronto para takar fire! ( entre com números de 0 a 6 ) );
+while(isSunk == false) {
+  guess = prompt("Pronto para takar fire! ( entre com números de 0 a 6 )" );
   if(guess < 0 || guess > 6) {
     alert("por favor coloque um valor válido");
   } else {
@@ -75,7 +75,7 @@ while(isSunk == false) {
       isSunk = true;
       alert("fim de jogo você venceu");
     }
-  }else { 
+  }else {
     alert("MISS");
   }
 var stats = "You took " + guesses + " guesses to sink the battleship, " +
@@ -83,6 +83,7 @@ var stats = "You took " + guesses + " guesses to sink the battleship, " +
 alert(stats);
 }
 ````
+
 esse capitulo fez uma pequena introdução a estruturas de controle como while , if , existem outras como switch que não foram abordadas aqui, condições
 para essas estruturas podem ser encadeadas entre chaves usando || para OU e && para E, aqui vimos um básico sobre funções com a função random() que gera
 números aleatorios e funções como console.log() e alert() que exibem mensagens.
