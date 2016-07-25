@@ -56,18 +56,18 @@ var fido = new Dog("Fido", "Mixed", 38);
 ````
 <ol>
   <li>  
-  1º - primeiro o operador NEW vai criar um objeto vazio.
+  o operador NEW vai criar um objeto vazio.
   </li>
   <li>
-  2º - **new** seta o **this** como ponto para criar o novo objeto.
+  **new** seta o **this** como ponto para criar o novo objeto.
   </li>
   <li>
-  3º - com o **this** fixado podemos chamar a função Dog passando os argumentos.
+  com o **this** fixado podemos chamar a função Dog passando os argumentos.
   </li>
   <li>
-  4º - ao entrar no corpo da função Dog temos atribuição a **this** para os três parâmetros.
+  ao entrar no corpo da função Dog temos atribuição a **this** para os três parâmetros.
   </li>
   <li>
-  5º - ao final da execução da função Dog o operador **new** vai retornar **this** com a referência para o novo objeto criado, **this** será retornado para você e não é necessário deixa explicíto usando **return** e após o novo objeto ser retornado nos vamos atribuir a referência para o mesmo á variável **fido**.
+  ao final da execução da função Dog o operador **new** vai retornar **this** com a referência para o novo objeto criado, **this** será retornado para você e não é necessário deixa explicíto usando **return** e após o novo objeto ser retornado nos vamos atribuir a referência para o mesmo á variável **fido**.
   </li>
 </ol>
