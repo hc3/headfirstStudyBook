@@ -71,3 +71,30 @@ var fido = new Dog("Fido", "Mixed", 38);
   ao final da execução da função Dog o operador **new** vai retornar **this** com a referência para o novo objeto criado, **this** será retornado para você e não é necessário deixa explicíto usando **return** e após o novo objeto ser retornado nos vamos atribuir a referência para o mesmo á variável **fido**.
   </li>
 </ol>
+
+Podemos colocar métodos nos construtores, criamos o objeto Dog para representar um cachorro mas esse cachorro não pode latir já que ele não tem o método latir então vamos implementar esse método no construtor.
+
+````js
+function Dog(name, breed, weight) {
+  this.name = name;
+  this.breed = breed;
+  this.weight = weight;
+  this.bark = function() {
+    if (this.weight > 25) {
+      alert(this.name + " says Woof!");
+    } else {
+      alert(this.name + " says Yip!");
+    }
+  };
+}
+````
+a criação de métodos para objetos usando o construtores é a mesma usamos o this e uma função anônima com isso já podemos rodar um teste.
+````js
+var fido = new Dog("Fido", "Mixed", 38);
+var fluffy = new Dog("Fluffy", "Poodle", 30);
+var spot = new Dog("Spot", "Chihuahua", 10);
+var dogs = [fido, fluffy, spot];
+for (var i = 0; i < dogs.length; i++) {
+  dogs[i].bark();
+}
+````
