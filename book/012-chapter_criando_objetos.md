@@ -54,8 +54,20 @@ Já vimos a implementação do construtor, agora vamos entender um pouco como el
 ````js
 var fido = new Dog("Fido", "Mixed", 38);
 ````
-1º - primeiro o operador NEW vai criar um objeto vazio.
-2º - **new** seta o **this** como ponto para criar o novo objeto.
-3º - com o **this** fixado podemos chamar a função Dog passando os argumentos.
-4º - ao entrar no corpo da função Dog temos atribuição a **this** para os três parâmetros.
-5º - ao final da execução da função Dog o operador **new** vai retornar **this** com a referência para o novo objeto criado, **this** será retornado para você e não é necessário deixa explicíto usando **return** e após o novo objeto ser retornado nos vamos atribuir a referência para o mesmo á variável **fido**.
+<ol>
+  <li>  
+  1º - primeiro o operador NEW vai criar um objeto vazio.
+  </li>
+  <li>
+  2º - **new** seta o **this** como ponto para criar o novo objeto.
+  </li>
+  <li>
+  3º - com o **this** fixado podemos chamar a função Dog passando os argumentos.
+  </li>
+  <li>
+  4º - ao entrar no corpo da função Dog temos atribuição a **this** para os três parâmetros.
+  </li>
+  <li>
+  5º - ao final da execução da função Dog o operador **new** vai retornar **this** com a referência para o novo objeto criado, **this** será retornado para você e não é necessário deixa explicíto usando **return** e após o novo objeto ser retornado nos vamos atribuir a referência para o mesmo á variável **fido**.
+  </li>
+</ol>
