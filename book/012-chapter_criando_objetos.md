@@ -98,3 +98,77 @@ for (var i = 0; i < dogs.length; i++) {
   dogs[i].bark();
 }
 ````
+
+vamos construir carros agora, já aprendemos como usar os contrutores para criar objetos então vamos usar!
+
+````js
+var car = {
+  make: "Chevy",
+  model: "Bel Air",
+  year: 1957,
+  color: "red",
+  passengers: 2,
+  convertible: false,
+  mileage: 1021,
+  started: false,
+  start: function() {
+    this.started = true;
+  },
+  stop: function() {
+    this.started = false;
+  },
+  drive: function() {
+    if (this.started) {
+      console.log(this.make + " " +
+      this.model + " goes zoom zoom!");
+    } else {
+      console.log("Start the engine first.");
+    }
+  }
+};
+````
+esse é o objeto carro temos que criar vários carros iguais a esse para poder usar um construtor então vamos imaginar como esse construtor ficaria:
+
+````js
+var chevy = new Car("Chevy", "Bel Air", 1957, "red", 2, false, 1021);
+var cadi = new Car("GM", "Cadillac", 1955, "tan", 5, false, 12892);
+var taxi = new Car("Webville Motors", "Taxi", 1955, "yellow", 4, false, 281341);
+var fiat = new Car("Fiat", "500", 1957, "Medium Blue", 2, false, 88000);
+````
+muitos argumentos são passados me parece que está ficando algo confuso, vamos dar uma olhada na função construtra agora:
+
+````js
+function Car(make, model, year, color, passengers, convertible, mileage) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.color = color;
+  this.passengers = passengers;
+  this.convertible = convertible;
+  this.mileage = mileage;
+  this.started = false;
+  this.start = function() {
+    this.started = true;
+  };
+//rest of the methods here
+}
+````
+podemos ver quantos parâmetros são esperados na função construtra para que a mesma possa criar o objeto, nesses casos podemos passar esse parâmetros para um objeto literal e passar o objeto litral como parâmetro para função construtora vamos ver isso na prática.
+
+````js
+var cadi = new Car("GM", "Cadillac", 1955, "tan", 5, false, 12892);
+
+var cadiParams = {make: "GM",
+model: "Cadillac",
+year: 1955,
+color: "tan",
+passengers: 5,
+convertible: false,
+mileage: 12892};
+````
+vamos remover os dados da função construtora e passar para um objeto literal, para então fazermos assim:
+
+````js
+var cadi = new Car(cadiParams);
+````
+540
