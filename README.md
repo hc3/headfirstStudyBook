@@ -26,7 +26,7 @@ esse repo tem códigos para o estudo com o livro head first javascript programmi
 
 [11 - Funções, esse capitulo ira abordar e forma mais contudente o assunto de funções com closures , anonymous functions entre outros](./book/011-chapter_anonumous_functions_scope_and_closures.md)
 
-12 - Objetos, esse capitulo ira abordar objetos - 29 Pags.
+[12 - Objetos, esse capitulo ira abordar objetos](./book/012-chapter_criando_objetos.md)
 
 13 - Objetos Prototypes, ira mais a fundo nos objetos vai tratar herança e parte de OO do JS - 48 Pags.
 
