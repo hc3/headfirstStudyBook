@@ -240,3 +240,31 @@ if (cadi instanceof Car) {
 como no exemplo acima deixa bem claro o objeto **cardi** é uma instancia de **Car**.
 
 <h3> Objetos contruidos podem ter propriedades independentes </h3>
+
+todo os objetos podem ter propriedades independentes do construtor, objetos criados com construtor podem ter propriedades alterados ou removidas ou adicionadas apos sua criação podemos ver um exemplo básico aqui:
+
+````js
+var fido = new Dog("Fido", "Mixed", 38);
+fido.owner = "Bob";
+delete fido.weight;
+````
+podemos adicionar um novo método também:
+
+````js
+fido.trust = function(person) {
+  return (person === "Bob");
+};
+````
+mais uma pequena alteração :
+
+````js
+var notBite = fido.trust("Bob");
+var spot = new Dog("Spot", "Chihuahua", 10);
+notBite = spot.trust("Bob");
+````
+
+vamos entender bem o que foi feito aqui, primeiro o objeto **fido** é criado usando o construtor do objeto **Dog** feito isso a propriedade **owner** do objeto **fido** é alterada e depois a propriedade **weight** é removida feito isso criamos um método **trust** no objeto **fido** depois criamos uma variável **notBit** que vai receber o retorno do método **trust** depois criamos um objeto chamado **spot** que é construido a partir do construtor do objeto **Dog** feito isso tentamos acessar o método **trust** no objeto **spot** nessa linha vamos ter um erro porque o método não existe no objeto **spot** ele foi criado exclusivamente para o objeto **fido**, vamos lembrar que todos os objetos são instancias de **Dog**.
+
+<h2> RESUMO </h2>
+
+nesse capitulo falamos de objetos de uma maneira mais intensa, vimos a criação literal de objetos que é algo que no dia-a-dia não é muito recomendado, vimos a criação por meio de factories e o uso dos construtores, a palavra reservada <b>this</b> é um outro ponto importante no próximo e último capitulo vamos falar de prototypes e encerramos a tradução desse material.
