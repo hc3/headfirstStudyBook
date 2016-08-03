@@ -171,4 +171,72 @@ vamos remover os dados da função construtora e passar para um objeto literal, 
 ````js
 var cadi = new Car(cadiParams);
 ````
-540
+mas apenas isso não irá resolver nosso problema, o construtor espera receber sete argumentos e não um objeto, vamos refatorar o construtor para que no lugar de receber diretamente esses sete argumentos ele possa receber um objeto.
+
+````js
+var cadiParams = {
+  make: "GM",
+  model: "Cadillac",
+  year: 1955,
+  color: "tan",
+  passengers: 5,
+  convertible: false,
+  mileage: 12892
+};
+
+var cadi = new Car(cadiParams);
+
+function Car(params) {
+  this.make = params.make;
+  this.model = params.model;
+  this.year = params.year;
+  this.color = params.color;
+  this.passengers = params.passengers;
+  this.convertible = params.convertible;
+  this.mileage = params.mileage;
+  this.started = false;
+  this.start = function() {
+    this.started = true;
+  };
+  this.stop = function() {
+    this.started = false;
+  };
+  this.drive = function() {
+    if (this.started) {
+      alert("Zoom zoom!");
+    } else {
+      alert("You need to start the engine first.");
+    }
+  };
+}
+````
+agora o construtor mudou, pois é esperado um objeto com os seguintes atributos ( make, model, year, color, passengers, convertible, mileage) acessando os parametros do objeto passado usando o <b>.</b>, podemos rodar os testes e ver como tudo funciona normalmente.
+
+````js
+cadi.start();
+cadi.drive();
+cadi.drive();
+cadi.stop();
+````
+
+<h3> Entendendo a instanciação de objetos </h3>
+
+não podemos olhar para objetos em Javascript e pensar em um tipo específico como dog ou car, em javascript os objetos são estruturas dinâmicas e o tipo de todos os objetos é <b>Object</b> não importando quais propriedades ou métodos, mas se quisermos saber um pouco mais sobre o objeto que será criado devemos conhecer seu construtor, até o momento aprendemos a instanciar objetos usando o <b>new</b> e com isso estamos dizendo de uma maneira formal que os objetos criados a partir do new são instancias de um objeto pai que no caso é o objeto car, com o operador **instanceof** podemos saber se um objeto é uma instania criada a partir de um construtor específico.
+
+````js
+var cadiParams = {
+  make: "GM",
+  model: "Cadillac",
+  year: 1955, color: "tan",
+  passengers: 5,
+  convertible: false,
+  mileage: 12892
+};
+var cadi = new Car(cadiParams);
+if (cadi instanceof Car) {
+  console.log("Congrats, it's a Car!");
+};
+````
+como no exemplo acima deixa bem claro o objeto **cardi** é uma instancia de **Car**.
+
+<h3> Objetos contruidos podem ter propriedades independentes </h3>
