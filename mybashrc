@@ -1,0 +1,16 @@
+#my alias
+alias ligavpn='cd /etc/openvpn/client && sudo openvpn --config client.ovpn --ca ca.crt --cert client.crt --key client.key --comp-lzo'
+alias offpad='synclient TouchPadOff=1'
+alias duplicarvga='xrandr --output VGA1 --right-of LVDS1'
+alias duplicarhdmi='xrandr --output HDMI1 --right-of LVDS1'
+alias openche='cd ~/Documentos/che/eclipse-che-electron-linux64/eclipse-che-linux/ && ./eclipse-che . http://192.168.0.10:8080/dashboard/\#/ide/che/hunza-eliel'
+alias openpgadmin='cd /opt/enviromentpy/pgadmin4/bin && source activate && python /opt/enviromentpy/pgadmin4/lib/python3.4/site-packages/pgadmin4/pgAdmin4.py '
+
+
+export PATH=/home/hc3/Downloads/mongodb/mongodb-linux-x86_64-3.2.10/bin:$PATH
+export CATALINA_HOME=/opt/tomcat8/
+
+export ANDROID_HOME=/home/hc3/Android/SDK/
+
+export PATH=${PATH}:/home/hc3/Android/SDK/tools
+export PATH=${PATH}:/home/hc3/Android/SDK/platform-tools
