@@ -1,15 +1,16 @@
 # Introdução..
 
-javascript inicialmente criado para executar no browser e criar interações para páginas estaticas na web, para executar um código javascript no seu html
-usamos a tag **<script></script>**.
+javascript inicialmente criado para executar no browser e criar interações para páginas estaticas na web, para executar um código javascript no seu html devemos usar a tag **<script></script>** e partir da ai já temos uma iteração entre as páginas.
 ````html
 <script>
   alert("Hello World");
 </script>
 ````
+
 ### como fazer uma declaração de variável.
 
-quando criamos componentes html normalmente fazemos marcações onde queremos editar por exemplo
+quando criamos componentes html normalmente fazemos marcações onde queremos editar criando uma class, e com isso acessamos as propriedades de estilo de qualquer tag e aplicados estilo a ela usando css.
+
 ````html
 <h1 class="top">Aqui temos um cabeçalho marcado com a classe top</h1>
 <p>esse cabeçalho pode ser alterado usando css </p>
@@ -22,7 +23,9 @@ p {
 }
 </style>
 ````
-com o javascript podemos criar declarações que podem por exemplo fazer uma verificação 
+
+dentro de uma tag script podemos fazer o mesmo com o javascript, e assim como usamos o css para aplicar estilo a elementos html usaremos o javascript para executar lógica. Com o javascript podemos criar declarações que podem por exemplo fazer uma verificação.
+
 ````js
 var idade = 25;
 
@@ -32,22 +35,21 @@ if(idade > 18) {
   alert("menor de idade");
 }
 ````
-algo interessante do javascript é que não é uma linguagem fortemente tipada onde precisamos declarar o tipo da variável, no javascript a variável ela tem
-a função de "guardar valores" como por exemplo
+
+algo interessante do javascript é que não é uma linguagem fortemente tipada onde precisamos declarar o tipo da variável. No javascript é preciso declarar apenas o nome da variável e com isso atribuir seu valor.
+
 ````js
 var idade = 10;
 var nome = "jose";
 var isValid = true;
 ````
-cada variável recebeu um valor idade recebeu 10 como seu valor nome recebeu jose e isValid recebeu true e a declaração da variável e feita nesse padrão
-palavra reservada **var** seguida do nome da variável sinal de igualdade e o valor a ser atribuido a essa variável e por fim o nosso amado **;**, mas é
-claro que pode ser opcional podemos declarar uma variável assim ```` var idade; ```` sem incializar, o nome das variáveis não pode inciar com números 
-ou ser alguma das palavras reservadas do javascript que é uma lista que você encontra fácil na [web](www.google.com.br).
 
 ### Loop e estruturas condicionais 
 
 o javascript tem também algumas formas de executar loops ou decisões.
-<h3>while</h3>
+
+>while
+
 ````js
 var idade = 1;
 while(idade < 18) {
@@ -55,11 +57,9 @@ while(idade < 18) {
   idade = idade + 1; // ou idade++
 }
 ````
-a estrutura while faz uma pergunta enquanto a idade for menor que 18 o bloco de código que está entre as chaves sera executado, podemos notar também que
-a variável que da condição para que o loop seja executado é incrementada a cada volta do loop isso é feito para não gerar um loop infinito dado que se a
-idade for sempre menor que 18 a função alert sera chamada infinitas vezes.
 
-<h3>if</h3>
+>if
+
 ````js
 if(idade < 18) {
   alert("menor de idade");
@@ -67,8 +67,33 @@ if(idade < 18) {
   alert("idoso");
 }
 ````
-a condicional if ou se, faz outra pergunta se idade é menor que 18 então execute o primeiro bloco se não se for maior que 60 execute o segundo bloco essa
-condicional diferente do loop while executa apenas uma vez não sendo necessário incrementar a variável idade.
+
+>switch
+
+````js
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+}
+````
 
 ### Resumo
 
