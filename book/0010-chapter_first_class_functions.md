@@ -1,9 +1,8 @@
-## Funções de Primeira Classe
-### First Class Functions
+## Funções de Primeira Classe ( First Class Functions ).
 
--Funções de primeira classe, quando funções são tratadas como valores que podem ser passados, retornados, manipulados.
+Funções de primeira classe ( first class function ), quando funções são tratadas como valores que podem ser passados, retornados, manipulados.
 
--Funções de ordem superior, quando funções são passadas por parâmetro ou retornada de outras funções.
+Funções de ordem superior ( higher order function ), quando funções são passadas por parâmetro ou retornada de outras funções.
 
 as funções em javascript podem ser declaradas de duas formas:
 
