@@ -1,4 +1,4 @@
-# Iniciando com Javascript ( resumo do livro head first javascript programming ).
+# Iniciando com Javascript.
 
 você está iniciando em javascript? já começo indicando o livro do [use a cabeça...](https://www.amazon.com.br/Head-First-JavaScript-Programming-Freeman/dp/144934013X) de onde se deriva boa parte desse material de estudo que eu resolvi dar uma repaginada para apresentar um mini curso da faculdade.
 
