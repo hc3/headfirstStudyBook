@@ -1,4 +1,6 @@
-# Head First Javascript Programming.
+# Iniciando com Javascript ( resumo do livro head first javascript programming ).
+
+você está iniciando em javascript? já começo indicando o livro do [use a cabeça...](https://www.amazon.com.br/Head-First-JavaScript-Programming-Freeman/dp/144934013X) de onde se deriva boa parte desse material de estudo que eu resolvi dar uma repaginada para apresentar um mini curso da faculdade.
 
 esse repo tem códigos para o estudo com o livro head first javascript programming.
 
@@ -30,6 +32,4 @@ esse repo tem códigos para o estudo com o livro head first javascript programmi
 
 13 - Objetos Prototypes, ira mais a fundo nos objetos vai tratar herança e parte de OO do JS - 48 Pags.
 
-
-
-Vou tentar traduzir o que eu entender é claro, lembrando que meu inglês é péssimo e isso pode até ajuda-lo a melhorar. Adicionei outras ideias no capitulo a partir de estudos em outros materiais.
+Outras indicações além do livro do use a cabeça temos o [eloquent](https://github.com/braziljs/eloquente-javascript) que também é maravilhoso...
