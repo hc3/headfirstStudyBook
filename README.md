@@ -22,7 +22,7 @@ esse repo tem códigos para o estudo com o livro head first javascript programmi
 
 * [08 - Construindo um app](./book/08-chapter_construindo_uma_app.md)
 
-09 - Eventos, esse capitulo vai ser abordado os eventos no DOM
+* 09 - Eventos, esse capitulo vai ser abordado os eventos no DOM [ OFF ] 
 
 * [10 - Funções first class e higher order ](./book/010-chapter_first_class_functions.md)
 
@@ -30,6 +30,6 @@ esse repo tem códigos para o estudo com o livro head first javascript programmi
 
 * [12 - Objetos, esse capitulo ira abordar objetos](./book/012-chapter_criando_objetos.md)
 
-13 - Objetos Prototypes, ira mais a fundo nos objetos vai tratar herança e parte de OO do JS - 48 Pags.
+* 13 - Objetos Prototypes, ira mais a fundo nos objetos vai tratar herança e parte de OO do JS - 48 Pags. [ OFF ]
 
 Outras indicações além do livro do use a cabeça temos o [eloquent](https://github.com/braziljs/eloquente-javascript) que também é maravilhoso...
